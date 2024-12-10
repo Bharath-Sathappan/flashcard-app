@@ -11,7 +11,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Set OpenAI API key
-openai.api_key = 'your-api-key'
+API_KEY = 'your-api-key'
 
 def extract_text_from_pdf(pdf_file):
     """Extracts text from a PDF file."""
@@ -36,7 +36,7 @@ def generate_flashcards(input_text, num_flashcards=None, required_terms=None):
     """
     
     try:
-        client = Client()
+        client = Client(api_key=API_KEY)
 
         response = client.chat.completions.create(
             model="gpt-4o-mini",

@@ -1,5 +1,3 @@
-import os
-import openai
 from openai import Client
 import json
 from flask import Flask, request, jsonify

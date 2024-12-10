@@ -51,6 +51,9 @@ python app.py
 ---
 
 ### **6. Open a new terminal and start the HTTP Server**  
+
+Make sure you are in the `flashcard-app` directory
+
 ```bash
 python -m http.server 8000
 ```

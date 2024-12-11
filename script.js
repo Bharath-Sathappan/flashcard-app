@@ -80,16 +80,14 @@ function showFlashcard() {
     };
 }
 
-
 function showNextFlashcard() {
-    currentFlashcardIndex++;
     const keys = Object.keys(flashcards);
 
-    if (currentFlashcardIndex >= keys.length) {
-        alert('You have reached the end of the flashcards!');
-        currentFlashcardIndex = 0;
-    } else {
+    if (currentFlashcardIndex < keys.length-1) {
+        currentFlashcardIndex++;
         showFlashcard();
+    } else {
+        alert('You have reached the end of the deck!');
     }
 }
 

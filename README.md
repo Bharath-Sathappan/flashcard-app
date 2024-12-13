@@ -80,10 +80,9 @@ python -m http.server 8000
 
 ---
 
-## **Troubleshooting**  
+## **Citations**  
 
-- Ensure all dependencies are installed correctly.  
-- Verify that the OpenAI API key is properly set.  
-- If Flask doesn't start, check that the correct Conda environment is active.  
+- We used ChatGPT to write the 2 UI files, script.js and index.html
+- We used Stack Overflow and the OpenAI API documentation along with ChatGPT to assist in developing our backend file, app.py
 
 ---
